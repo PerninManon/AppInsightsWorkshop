@@ -3,11 +3,9 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "prefixe": {
-      "defaultValue": "aiworkshop",
       "type": "String"
     },
     "getFunction": {
-      "defaultValue": "GetProducts",
       "type": "string"
     }
   },
