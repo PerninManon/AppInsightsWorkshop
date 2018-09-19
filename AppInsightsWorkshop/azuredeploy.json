@@ -172,11 +172,11 @@
               "value": "~1"
             },
             {
-              "name": "[concat(parameters('prefixe'),'_RootManageSharedAccessKey_SERVICEBUS')]",
+              "name": "[concat('function','_RootManageSharedAccessKey_SERVICEBUS')]",
               "value": "[listKeys(variables('authRuleResourceId'), '2017-04-01').primaryConnectionString]"
             },
             {
-              "name": "[concat(parameters('prefixe'),'_RootManageSharedAccessKey_STORAGE')]",
+              "name": "[concat('function','_RootManageSharedAccessKey_STORAGE')]",
               "value": "[concat('DefaultEndpointsProtocol=https;AccountName=', variables('businessStorage'), ';AccountKey=', listKeys(resourceId('Microsoft.Storage/storageAccounts', variables('businessStorage')),'2017-06-01').keys[0].value)]"
             }
           ]
