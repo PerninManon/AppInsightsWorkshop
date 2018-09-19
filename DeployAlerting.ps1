@@ -1,6 +1,5 @@
 ﻿param(
     [string]$zipFile,
-    [string]$prefixe,
     [string]$rgName,
     [string]$functionAppName
 )
