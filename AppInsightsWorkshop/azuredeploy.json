@@ -5,7 +5,7 @@
     "prefixe": {
       "type": "String"
     },
-    "getFunction": {
+    "functionAppSuffixe": {
       "type": "string"
     }
   },
@@ -13,7 +13,7 @@
     "storageAccountName": "[concat(parameters('prefixe'),uniqueString(resourceGroup().id))]",
     "businessStorage": "[concat(variables('topicName'), uniqueString(resourceGroup().id))]",
     "hostingPlanName": "[concat(parameters('prefixe'),'plan')]",
-    "appName": "[concat(parameters('prefixe'),parameters('getFunction'))]",
+    "appName": "[concat(parameters('prefixe'),parameters('functionAppSuffixe'))]",
     "busNamespace": "[concat(parameters('prefixe'),'bus')]",
     "singleQuote": "'",
     "topicName": "products",
